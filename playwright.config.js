@@ -1,5 +1,5 @@
 // @ts-check
-const { defineConfig, devices } = require('@playwright/test');
+const { defineConfig, devices, chromium } = require('@playwright/test');
 
 /*
  * @see https://playwright.dev/docs/test-configuration
@@ -13,7 +13,7 @@ const config = ({
   reporter : 'html',
 
   use: {
-     browserName :'firefox',
+     browserName :'chromium',
      headless : false
   }
 
